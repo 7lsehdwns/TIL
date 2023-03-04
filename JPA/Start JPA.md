@@ -1,5 +1,5 @@
 # JPA 실습
-> Maven 프로젝트를 생성하여 hibernate와 h2database를 활용하여 실습을 진행
+> Maven 프로젝트를 생성하여 hibernate와 h2database 라이브러리 추가
 
 ```XML
 <?xml version="1.0" encoding="UTF-8"?> 
