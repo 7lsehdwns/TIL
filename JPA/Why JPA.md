@@ -33,14 +33,12 @@ JPA 2.1 표준 명세를 구현한 3가지 구현체
 - 기존에는 필드 변경시 모든 SQL을 수정 해야 했지만 JPA는 필드만 추가 한다면 SQL은 JPA가 처리한다.
 
 #### 생산성
-<pre>
-<code>
+```JAVA
 jpa.persist(member) // 저장
 Member member = jpa.find(memberid) // 조회
 member.setName("변경할이름") // 수정
 jpa.remove(member) // 삭제
-</code>
-</pre>
+```
 - JPA는 수정 메소드를 제공하지 않는다. JPA는 데이터 수정 시, 매핑된 객체(테이블 데이터)를 조회해서 값을 변경 후 커밋하면 DB서버에 UPDATE문을 전송하여 UPDATE를 실행 해준다.
 
 #### 성능
