@@ -76,7 +76,7 @@ public class Member {
  //Getter, Setter 생성
 }
 ```
-### EmtityMnagerFactory를 생성해 준다.
+### EntityMnagerFactory를 생성해 준다.
 > 영속석 컨텍스트에 접근하여 엔티티에 대한 DB 적업을 제공
 ```JAVA
 package hellojpa;
@@ -100,7 +100,7 @@ public class JpaMain {
         // 등록
         // 수정
         // 삭제
-        // 회원 단 건 조회 추가하기.
+        // 회원 단 건 조회
 
         // JPQL을 사용한 모든 회원 조회
         try{
@@ -127,8 +127,7 @@ public class JpaMain {
 - 엔티티 매니저는 쓰레드간에 공유 X(사용하고 버린다)
 - JPA의 모든 데이터 변경은 트랜잭션 안에서 실행(예외처리를 해주는 것이 옳바른 코드)  
 
-내일 주석으로 적어둔 코드 추가하고 추가 작성하기...
-JPQL 내용 정리 후 추가하기
+## JPQL
 
 
 
