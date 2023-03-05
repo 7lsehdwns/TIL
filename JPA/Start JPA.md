@@ -125,16 +125,16 @@ public class JpaMain {
             entityManager.persist(member);
 
             // 회원 단 건 조회
-            entityManager.find(Membeer.class, 2L);
+            Member findMember = entityManager.find(Member.class, 2L);
             System.out.println("findMember.id = " + findMember.getId());
             System.out.println("findMember.name = " + findMember.getName());
 
             // 수정
-            entityManager.find(Membeer.class, 2L);
+            Member findMember = entityManager.find(Member.class, 2L);
             findMember.setName("HelloJpa")
 
             // 삭제
-            entityManager.find(Membeer.class, 2L);
+            Member findMember = entityManager.find(Member.class, 2L);
             entityManager.remove(findMember);
 
             // JPQL을 사용한 모든 회원 조회
